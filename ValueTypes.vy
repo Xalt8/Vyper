@@ -14,11 +14,7 @@ def __init__():
     self.b = True
     self.i = -1
     self.u = 123
-<<<<<<< HEAD
     self.d = 3.14 # Remix does not know how to handle decimals yet - will throw an error
-=======
-    self.d = 3.14
->>>>>>> 68523bde65a44992a3909192ff2127ccc7fc9414
     self.addr = 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2
     self.b32 = 0x0000000000000000000000009f8F72aA9304c8B593d555F12eF6589cC3A579A2
     self.bs = b"\x01"
