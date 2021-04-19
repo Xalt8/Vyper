@@ -61,3 +61,7 @@ def continueAndBrak() -> (uint256):
             break
         x = convert(i, uint256)
     return x
+
+@external
+def blank():
+    pass
