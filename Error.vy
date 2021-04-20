@@ -28,7 +28,12 @@ def setXtoFoo():
     self._setX(msg.sender, "Foo")
     self.x = "Bar"
 
+# UNREACHABLE
+@external
+def unreachable():
+    raise UNREACHABLE
+
+
 # state changes are reverted
 
-# UNREACHABLE
 
