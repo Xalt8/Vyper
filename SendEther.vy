@@ -10,4 +10,5 @@ Send Ether from contract to another address
 @payable
 def sendEther(to: address):
     # calls __default__ when Ether sent to contract 
+    # send forwards 2300 gas
     send(to, msg.value)
