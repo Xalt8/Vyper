@@ -6,7 +6,6 @@ interface Receiver:
     def pay(): payable
     def doesNotExist(): nonpayable
 
-
 @external
 def getBalanceOfReceiver(receiver:address) -> uint256:
     return Receiver(receiver).getBalance()
