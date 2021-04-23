@@ -5,6 +5,7 @@ contract RawCallReceiver {
 
     function test(uint x, uint y) external
     {
+        require(x == y, "x != y");
         emit Log(x, y);
     }
 }
