@@ -11,4 +11,7 @@ interface DeployMe:
 @external
 def deploy(_masterCopy: address, _name: String[100]) -> address:
     addr: address = create_forwarder_to(_masterCopy)
+    #DeployMe __init__ was not called, else this would fail
+    DeployMe(addr).setup(_name)
+    
     return addr

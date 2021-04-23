@@ -8,4 +8,10 @@ def __init__():
     self.owner = msg.sender 
     self.name = "Foo bar"
 
-    
+# call once after create_forwarder_to
+@external
+def setup(_name: String[100]):
+    assert self.owner == ZERO_ADDRESS, "owner != zero address" # we only want to call this once
+    self.owner = msg.sender
+    self.name = _name
+
