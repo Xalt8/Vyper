@@ -15,3 +15,8 @@ def setup(_name: String[100]):
     self.owner = msg.sender
     self.name = _name
 
+
+# Never have selfdestruct in the original contract used by create_forwarder_to
+@external
+def kill():
+    selfdestruct(msg.sender)
