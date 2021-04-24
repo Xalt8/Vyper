@@ -4,7 +4,7 @@ interface ReEntrancyLock:
     def callMe(): nonpayable
 
 i: public(uint256)
-target: address
+target: public(address)
 
 @external
 def __init__(_target: address):
